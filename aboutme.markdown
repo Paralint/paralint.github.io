@@ -2,37 +2,45 @@
 layout: page
 title: About Paralint
 ---
-Hello, my name is Guillaume. I the president and main architect of Paralint. This section contains everything there is to know about me:
+Hello, my name is Guillaume. I the main() guy at Paralint. This section contains everything there is to know about me:
 
-My email adress is [guillaume@paralint.com](mailto:guillaume@paralint.com)
-and here is my public key
+My email adress is [guillaume@paralint.com](mailto:guillaume@paralint.com) and here is my public key
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG v1.4.8 (MingW32)
 
-mQGiBEeFke4RBADOaZUWbAJPiNjBziUi3q0ja7Q0BWyJlx3m9KWk3zQB6CGbTaG9
-1SB7wwD9qYPPW8367tw3RJ4N9ONZgExLsPMeINjAzRHn+IACn0tYvKL22QXKlmZQ
-mS9Z6gmzhNFy2DJv0BLXHpoUFFj59mHW4hwp3ndw21CCIKAmKv9NUaCCKwCgySHf
-w6XyWFsPYcplUTfC0HUCItkEALSi3xMYhDaX2Q9CamXxErcaPtE80CtlfNVmylRY
-JNUA/Vau/wgvBGkWtq01NCrBETavu9LNs+ZLiLCBGvwsyvWq/PXSFMMp954ZYfEc
-+7enEHbFy6KVWxEQNUud9GBLEUEeyltw3DSD+uYemFyqpwBsguQD31SqRV3wd4H1
-fm7kBACrQ/53SpJUzQIy4EHlFw6CTW0GcQ8LSAvAva0Mw6Bzmv22zszGtM2bZaes
-+Mza5F5wwuh7UNdisedpN5+Zy74CGRG5EfpxUubv20lw3HuVXlo3u6WmiKuC6T2j
-J10EgPctYtj/1HVH2lxi/mcjVt3n2tb8s4Vxig4M7hYicMfRqrRER3VpbGxhdW1l
-IFNlZ3VpbiAoaHR0cDovL3d3dy5wYXJhbGludC5jb20vKSA8Z3VpbGxhdW1lQHBh
-cmFsaW50LmNvbT6IYAQTEQIAIAUCR4WR7gIbAwYLCQgHAwIEFQIIAwQWAgMBAh4B
-AheAAAoJEBWW+Gq5/Taz2hkAoJhlM4zlYK6VhUvxX03o5Kwl0735AJ9ru9gSXdSo
-ImfpWrxiaA6yKqm0wrkBDQRHhZHuEAQAxPqCrJA5VJWBGKVegHxV4MA14FVQbpOC
-tIOp+gJq32mnRx+hcThMSa6JMF7U18NIgHq2wy+7OZMGTKuSQ8yRnSWfk77NxNIW
-QNoCwd8Z+/HMGqnCDNsWlUcsifzRobv2K5fCFaqgN5p4tMqSWSDRChCQ7St8JfIK
-y3QQ4IYAMwcABA0D/igTbULy6AqUGVHZC6a9XlxKCMoCeWD0Oz38iirHYxzveiWm
-/kRKxq2Ibfiu9sSWF1Ego+K4oOgP9d7GYHT/Tn8x/1e4dFPq07ij0eaFDr7VeawP
-nADcIVLmN+adB0RtEj8UlH2Ppcn20CUJOhNdGGi72P0kbbHLVq4i4GcfyD35iEkE
-GBECAAkFAkeFke4CGwwACgkQFZb4arn9NrNFhgCgxf4iSsmE2htvbU1kgdV8DOna
-suUAn0MS+y1FPp7p5/0NWCHrZc0RF3vD
-=e8Er
+mQENBFj1fXYBCADM3YXuGA7mLH+uGi27Dix5Tscj1iozUfK/NpAFOeYCMTFvZ4SY
+wpDf5fcnX1DHVjuCjw6lGegJLtLjUIKUQWxUew7rg2/opQX0wbqOuPod3gsUzBkp
+f3gwezD2RpUcQxGv+L4vWAlBCgdfER7RdWJtvnQRXXHEEm4n1GrIQOrHULZ8moHo
+fEFadfBpFPriwE0tgkuzY8ZXTl0Ftdbn1pphaxHhCc3KjZ/O1G6hEtPQJI/E6ljX
++YPs13T7MPuEFcCto9dCVTq1IylgQPA1dM/sekCtEwVcwBA7eVJaz9JfwSDFcnVV
+d/qzs9gie856QPQh2+MEeSS/cZ9mW0NyDR63ABEBAAG0Kkd1aWxsYXVtZSBTw6ln
+dWluIDxndWlsbGF1bWVAcGFyYWxpbnQuY29tPokBVAQTAQgAPhYhBOJqetXID9C1
+cF77TMXIPGrLanLOBQJY9X12AhsDBQkDwmcABQsJCAcCBhUICQoLAgQWAgMBAh4B
+AheAAAoJEMXIPGrLanLOQwIH/3MvKHHXAdJcMhUpQ1LxCYJGC4Pih44gY3Qm1s8i
+UcVM3hzPnL2eiaX44InWsqrzRgh6pY4AV12gqAGYxZMyrlxGwXXAX7zuNFLE+9Bm
+VbbdZJrJXwoQP7b3ZK+tQQ24tA6m5dDLXLNpem+4C8Nxftncw8ux+ysWNzaQ11ln
+M+udw6KdFYyahhptqCjq3zd0f0HjjdNH3FepXxFaEDKuQnrxrkSGQUx+YRHOVNx6
+ooC8O7Y/g/NVv5vywIkD7k9eDNa24oWD0ywoLBrb0u02m3K7dqiC2mdnE++cQMkx
+G+RTIovP7LoS8vX738zDKLTIqwHNb5PEKQJ/yNfynQcXdom5AQ0EWPV9dgEIAN+s
+mQLTK9vYVkdlX5lX+S4gBFG6OB1J9OhOBU4/ilETC/T39yq/7qTA8MjRjdHg/Y1o
+klT1bAFPQixlTc304a4GK4bfSPyMv+C8R2zDuIfLyk0dSsNWk8mZIdwGbobLkRkC
+KbgNcrrLSBZ9tIEsnmBBQjgw9FLnz+nuz75rZTL4lbum2zpTxal7F9e769AM7Bps
+oaR5dj4Sqn3RMS0nFQao3OB/cDZ0fRQSin4CPtS0AE077WwtruzdKDEwCFhordAf
+sTdbVK1ekmwVHVk8MA4h15NssgiaPgbESU1aXAnL6dHOUenLOx6HfPwdy4mueuSD
+zW9sHqGfMrfLhQOhuc0AEQEAAYkBPAQYAQgAJhYhBOJqetXID9C1cF77TMXIPGrL
+anLOBQJY9X12AhsMBQkDwmcAAAoJEMXIPGrLanLOSV0H/2oq/lGyhbCPqcGjgsDZ
+tKgEHt8nZqSRWWJbFf2G3btsCMNKaEJh88wp/5Zrbqt9vYT+tWVvVxUUO5zV8Uvi
+Ezna/yT8bvAIHeR1yNwtKDAPixK4TtB74RuQ36iFcgHx/UybWbLOgtUySzOIiV3k
+85zt1jfn2YjVNAuPAH4BoLPGysgJR/WhpSGpOB3P3+VDgydHdmAqPvnnEmVzNXu4
+3EqrdLqiBZRlDHv8btqxs1G3nfiKqb0Lbyzwsv8v8K0M4cYpZ4kM/1ljKPqhVAnX
+tnN4+m55cGflsBFoxux5br5mY0/pSFLJQ0DQYggvrJSHMc3DuiXVPMx6USkoqWSf
+Nyo=
+=8o9X
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Thanks to [Mark James](http://www.famfamfam.com/) for the icons you see here !
+Pull my public key from keybase.io
+```
+curl https://keybase.io/ixe013/pgp_keys.asc | gpg --import
+```
