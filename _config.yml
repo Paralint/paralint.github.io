@@ -26,6 +26,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: paralint
 github_username:  ixe013
+permalink: /:year/:month/:title
+
+timezone: Etc/UTC
 
 # Build settings
 theme: minima

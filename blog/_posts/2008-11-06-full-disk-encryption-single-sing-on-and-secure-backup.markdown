@@ -76,7 +76,7 @@ It does not feature, but could be extended to :
 
 Here is a simplified view of my setup. A laptop, a usb drive and a simple NAS server (I have a Linksys NAS200, but any remote file share or ftp will do).
 
-[![Full disk encryption single sign-on diagram](http://www.paralint.com/blog/wp-content/uploads/2008/11/tcsso.jpg)](http://www.paralint.com/blog/wp-content/uploads/2008/11/tcsso.jpg)
+[![Full disk encryption single sign-on diagram](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/tcsso.jpg)](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/tcsso.jpg)
 
 
 

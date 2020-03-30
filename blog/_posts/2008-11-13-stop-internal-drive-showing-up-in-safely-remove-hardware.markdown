@@ -30,7 +30,7 @@ Find the drive that shows up in the safely remove hardware icon in your registry
 
 There is a numerical an alphanumerical key under that with a DWORD Capabilities value.
 
-![image](http://www.paralint.com/blog/wp-content/uploads/2008/11/image.png)
+![image](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/image.png)
 
 It is a bit field. The bit 0010 (4 in decimal) is the REMOVABLE bit. Clear it by subtracting 4 from the value you have. The value I had was 6, so now I am down to 2.
 
@@ -56,6 +56,6 @@ I hardly ever run as an administrator, so putting the above command in a script 
 
 Create a new task. In the "General" tab, click Change User or Group and enter "SYSTEM" . Trigger on startup and enter the same command as above, but without psexec -s. Your task is running reg.exe, with everything right of that (in the command line, earlier) as optional arguments.
 
-![image](http://www.paralint.com/blog/wp-content/uploads/2008/11/image1.png)
+![image](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/image1.png)
 
 Good luck and HTH !

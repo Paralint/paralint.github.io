@@ -21,7 +21,7 @@ To edit the registry of a remote machine running under a debugger :
 
 
 	
-  1. Break into the debugger. This step will happen naturally in most snafu ![Winking smile](http://www.paralint.com/blog/wp-content/uploads/2011/03/wlEmoticon-winkingsmile.png)
+  1. Break into the debugger. This step will happen naturally in most snafu ![Winking smile](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/wlEmoticon-winkingsmile.png)
 
 	
   2. Start a shell with the .! command

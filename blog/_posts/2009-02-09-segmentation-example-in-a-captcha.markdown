@@ -27,14 +27,14 @@ Here is an example. With a stock build of [ocrad](http://www.gnu.org/software/oc
 <tbody id="wlf87" >
 <tr id="wlf88" >
 
-<td width="33%" id="wlf89" >![banane](http://www.paralint.com/blog/wp-content/uploads/2009/02/banane.gif)
+<td width="33%" id="wlf89" >![banane](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/banane.gif)
 </td>
 
-<td width="33%" id="wlf811" >![banane-11](http://www.paralint.com/blog/wp-content/uploads/2009/02/banane-11.gif)  
+<td width="33%" id="wlf811" >![banane-11](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/banane-11.gif)  
 
 </td>
 
-<td width="33%" id="wlf814" >![banane-21](http://www.paralint.com/blog/wp-content/uploads/2009/02/banane-21.gif)  
+<td width="33%" id="wlf814" >![banane-21](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/banane-21.gif)  
 
 </td>
 </tr>

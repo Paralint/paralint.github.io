@@ -52,7 +52,7 @@ Well, security is always about assigning security descriptor (SECURITY_DESCRIPTO
 
  
 
-![SECURITY_DESCRIPTOR](http://www.paralint.com/blog/wp-content/uploads/2007/12/sd.png)
+![SECURITY_DESCRIPTOR](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/sd.png)
 
  
 
@@ -68,7 +68,7 @@ A token is like a conceptual pointer to a logon session. That logon session cont
 
  
 
-![Two logon session gives two logon SID](http://www.paralint.com/blog/wp-content/uploads/2007/12/logon_session.png)
+![Two logon session gives two logon SID](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/logon_session.png)
 
  
 
@@ -80,7 +80,7 @@ Keith Brown has a tool that lets [view and change the security descriptor of the
 
  
 
-![Running winstadacl to show the user SID and logon SID](http://www.paralint.com/blog/wp-content/uploads/2007/12/winstadacl.png)
+![Running winstadacl to show the user SID and logon SID](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/winstadacl.png)
 
  
 

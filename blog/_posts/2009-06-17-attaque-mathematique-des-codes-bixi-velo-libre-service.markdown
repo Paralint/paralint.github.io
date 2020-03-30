@@ -15,7 +15,7 @@ categories:
 
 J'étais au centre ville aujourd'hui et j'avais affaire pas très loin. Au lieu d'utiliser le métro, j'ai loué un Bixi, vélo en libre service. J'ai été surpris de constater que les codes Bixi ne comporte que 3 chiffres, sur 5 caractères, soit 3^5=243 codes possibles.
 
-[caption id="attachment_120" align="aligncenter" width="417" caption="Billet bixi portant le code 21213"]![Billet bixi portant le code 21213](http://www.paralint.com/blog/wp-content/uploads/2009/06/bixi21213.jpg)[/caption]
+[caption id="attachment_120" align="aligncenter" width="417" caption="Billet bixi portant le code 21213"]![Billet bixi portant le code 21213](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/bixi21213.jpg)[/caption]
 
 Ça semble bien peu, mais si les codes ne sont utilisables qu'au point de service où ils sont émis, et pour une durée limitée, avec peut-être une détection d'attaque en force brute, on devrais pouvoir dormir tranquille...
 

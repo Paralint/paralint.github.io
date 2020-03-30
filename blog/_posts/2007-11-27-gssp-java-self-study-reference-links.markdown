@@ -153,7 +153,7 @@ JAAS is three things :
 
 A client will instanciate a LoginContext. That LoginContext will read the configuration and instanciate the required LoginModules (more on that next). Each LoginModule will create a set of callbacks used to interact with the user (through the CallbackHandler). Here is a collaboration diagram that helped me. It shows a configuration with only one username-password logon module.
 
-![JAAS collaboration diagram](http://www.paralint.com/blog/wp-content/uploads/2007/12/jaas-collaboration-diagram1.png)
+![JAAS collaboration diagram](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/jaas-collaboration-diagram1.png)
 
 The method Subject.doAs will associate the Subject and the Action with the current access control context. Subject.doAsPriviledge will associate the Subject and the Action to a specific access control context.
 
@@ -269,7 +269,7 @@ Always specify CONFIDENTIAL or INTEGRAL if your auth-method is CLIENT-CERT. The 
 
 A full fledge J2EE application will have these configuration files for security : application.xml, web.xml, ejb-jar.xml and ra.xml. An EAR file can contain any number of those, and each can be package on its own. Most (if not all) implementation will have another xml file alongside the standard files to do implementation specific stuff.
 
-![Java J2EE declarative security configuration files](http://www.paralint.com/blog/wp-content/uploads/2007/12/declarative-security.png)
+![Java J2EE declarative security configuration files](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/declarative-security.png)
 
 
 ### 1.3.4 Programmatic Access Control
@@ -580,7 +580,7 @@ Pretty much everything else is in JCE. You can have has many providers as you li
 
 The graphic below is taken from the book [Core Security Patterns](http://www.coresecuritypatterns.com/).
 
-![Java crypto relations](http://www.paralint.com/blog/wp-content/uploads/2007/12/java-crypto-relations.png)
+![Java crypto relations](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/java-crypto-relations.png)
 
 You can serialize an object in an encrypted form, you create a CipherOutputStream and use it with a ObjectOutputStream.
 

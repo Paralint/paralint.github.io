@@ -28,7 +28,7 @@ With that knowledge, it is easy to set up a debugging session for your Credentia
 
  
 
-![6015610](http://www.paralint.com/blog/wp-content/uploads/2011/03/6015610.jpg)
+![6015610](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/6015610.jpg)
 
 <!-- more -->
 

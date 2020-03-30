@@ -18,7 +18,7 @@ J’ai eu à changer ce mot de passe et j’ai bloqué longtemps sur le problèm
 
 En fait, c’est tout simple. Lorsque vous entrez votre mot de passe dans ce formulaire les majuscules sont converties en minuscules, tout simplement.:
 
-![ntd3eFUc](http://www.paralint.com/blog/wp-content/uploads/2011/09/ntd3eFUc.jpg)
+![ntd3eFUc](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/ntd3eFUc.jpg)
 
 Je me suis douté de quelque chose quand les mots de passe générés par Password Safe ne fonctionnais pas, mais les blasphèmes et insultes marchait tout le temps… Pas de majuscules !
 

@@ -16,7 +16,7 @@ categories:
 Je suis tombé sur cette implémentation d'un CAPTCHA.
 
 
-![Must select 3 hamburgers in this lousy captcha ](http://www.paralint.com/blog/wp-content/uploads/2009/02/captcha.jpg)
+![Must select 3 hamburgers in this lousy captcha ](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/captcha.jpg)
 
 
 Je déteste les CAPTCHA. C'est comme de la mauvaise crypto.

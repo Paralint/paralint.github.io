@@ -14,7 +14,7 @@ categories:
 Je lis toujours les contrats de licence. Celui de Simple Comptable 2010 est particulier : il nous interdit de **désosser** le logiciel !
 
 
-![Désosser Simple Comptable est interdit !](http://www.paralint.com/blog/wp-content/uploads/2010/02/desosser.png)
+![Désosser Simple Comptable est interdit !](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/desosser.png)
 
 
 Après [vérification](http://www.granddictionnaire.com/), le terme “désosser” est bien celui qu’il faut utiliser pour désigner, en français, le _reverse engineering_. Malheureusement, je n’aurai peut-être pas l’occasion d’apprendre de nouveaux mots avec eux, puisque le contrat de license stipule aussi ceci :

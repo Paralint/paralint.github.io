@@ -12,7 +12,7 @@ wordpress_id: 40
 You can contact me by email :
 
 
-![guillaume-at-paralint-com.gif](http://www.paralint.com/blog/wp-content/uploads/2008/01/guillaume-at-paralint-com.gif)
+![guillaume-at-paralint-com.gif](/blog/images/{{ page.date | date: FIXME }}-{{ page.slug }}/guillaume-at-paralint-com.gif)
 
 
 Here is my public key :

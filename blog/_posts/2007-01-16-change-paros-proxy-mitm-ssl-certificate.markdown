@@ -36,7 +36,7 @@ If something goes wrong, you can type that command and compare the original and 
 
 To keep it as simple as possible, I will simply replace the paroskey file with my own certificate, using the same alias and password that is hardcoded. It will allow you to do the same without the need to use the java SDK. Ok, maybe just keytool.
 
-Now, you have to get your hand on a certificate. I suggest using your own certificate authority (CA) to start and play with the proxy right away. [This page](http://sial.org/howto/openssl/ca/) is perfect for this. It even works well on Windows with cygwin. A better setup would be to have a test CA in your company or lab that would sign your certificates. I also packaged the [two sample certificate files](http://www.paralint.com/blog/wp-content/uploads/2007/06/parosmitm.zip) I refer two in this article in a zip file.
+Now, you have to get your hand on a certificate. I suggest using your own certificate authority (CA) to start and play with the proxy right away. [This page](http://sial.org/howto/openssl/ca/) is perfect for this. It even works well on Windows with cygwin. A better setup would be to have a test CA in your company or lab that would sign your certificates. I also packaged the [two sample certificate files](/blog/images/{{ page.date | date: "%Y-%m-%d" }}-{{ page.slug }}/parosmitm.zip) I refer two in this article in a zip file.
 
 So if you have your CA public key in a file named ca-cert.pem, copy it to the local directory and import it in your brand new keystore with this command :
 
