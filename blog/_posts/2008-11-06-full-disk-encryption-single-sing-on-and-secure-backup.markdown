@@ -116,28 +116,28 @@ To set yourself up like this, follow these steps :
 
 Repeat steps 4-5-6 for each file based container. Copy to that container the files you want to be able on a need to know basis. When you need the files, mount the container. I wrote a batch file that mounts a file based container and shows a popup with my [Notifu utility](/projects/notifu/) (Windows only).
 
-    
-    @echo off
-    REM Mounts a file based TrueCrypt container and displays a pop-up
-    "C:\Program Files\TrueCrypt\TrueCrypt.exe" /v C:\users\your_username\Clients.tc /l X /q /k "%USERPROFILE%\entropy.dat" /m ts
-    start "" notifu /m "TrueCrypt drive X was mounted successfully from file Clients.tc" /p "Secure drive mounted" /d 5000 /i "C:\Program Files\TrueCrypt\TrueCrypt.exe"
-    start "" /MIN "C:\Program Files\TrueCrypt\TrueCrypt.exe" /q background
-
+```
+@echo off
+REM Mounts a file based TrueCrypt container and displays a pop-up
+"C:\Program Files\TrueCrypt\TrueCrypt.exe" /v C:\users\your_username\Clients.tc /l X /q /k "%USERPROFILE%\entropy.dat" /m ts
+start "" notifu /m "TrueCrypt drive X was mounted successfully from file Clients.tc" /p "Secure drive mounted" /d 5000 /i "C:\Program Files\TrueCrypt\TrueCrypt.exe"
+start "" /MIN "C:\Program Files\TrueCrypt\TrueCrypt.exe" /q background
+```
 
 The batch is a little different for USB drives.
 
-    
-    @echo off
-    REM Mounts a file based TrueCrypt container located on a USB drive and displays a pop-up
-    setlocal
-    REM I use this setup on many machines, and the USB drive is not
-    REM always given the same letter...
-    if exist f:\mobile.tc set TCFILE=f:\mobile.tc
-    if exist e:\mobile.tc set TCFILE=e:\mobile.tc
-    start "TrueCrypt" /MIN "C:\Program Files\TrueCrypt\TrueCrypt.exe" /v %TCFILE% /k "%USERPROFILE%\entropy.dat" /l U /a /q /m rm /m ts
-    start "" notifu /m "TrueCrypt drive U was mounted successfully from file %TCFILE%" /p "Secure drive mounted" /d 5000 /i "C:\Program Files\TrueCrypt\TrueCrypt.exe"
-    start "" /MIN "C:\Program Files\TrueCrypt\TrueCrypt.exe" /q background
-    endlocal
-
+```
+@echo off
+REM Mounts a file based TrueCrypt container located on a USB drive and displays a pop-up
+setlocal
+REM I use this setup on many machines, and the USB drive is not
+REM always given the same letter...
+if exist f:\mobile.tc set TCFILE=f:\mobile.tc
+if exist e:\mobile.tc set TCFILE=e:\mobile.tc
+start "TrueCrypt" /MIN "C:\Program Files\TrueCrypt\TrueCrypt.exe" /v %TCFILE% /k "%USERPROFILE%\entropy.dat" /l U /a /q /m rm /m ts
+start "" notifu /m "TrueCrypt drive U was mounted successfully from file %TCFILE%" /p "Secure drive mounted" /d 5000 /i "C:\Program Files\TrueCrypt\TrueCrypt.exe"
+start "" /MIN "C:\Program Files\TrueCrypt\TrueCrypt.exe" /q background
+endlocal
+```
 
 Feel free to use it and adapt it to your needs !

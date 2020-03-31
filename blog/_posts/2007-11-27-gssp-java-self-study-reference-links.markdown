@@ -429,21 +429,21 @@ A SecurityManager uses a policy file, that has grant entries based on any combin
 
 In WEB-INF\web.xml file, you can configure what page is used when an error occurs, like 404 (not found) or 500 (Server Error) or a specific Exception bubbles back up to the web container. The location of the page is relative to the root of your web application.
 
-    
-       <error-page>
-          <error-code>404</error-code>
-          <location>/404error.html</location>
-       </error-page>
-       <error-page>
-          <error-code>500</error-code>
-          <location>/500error.html</location>
-       </error-page>
-       <error-page>
-          <exception-type>javax.servlet.ServletException</exception-type>
-          <location>/ExceptionHandler.jsp</location>
-       </error-page>
-    <web><error></error></web>
+```
+   <error-page>
+      <error-code>404</error-code>
+      <location>/404error.html</location>
+   </error-page>
+   <error-page>
+      <error-code>500</error-code>
+      <location>/500error.html</location>
+   </error-page>
+   <error-page>
+      <exception-type>javax.servlet.ServletException</exception-type>
+      <location>/ExceptionHandler.jsp</location>
+   </error-page>
 
+```
 
 
 

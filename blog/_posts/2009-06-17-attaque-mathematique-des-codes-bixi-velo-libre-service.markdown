@@ -49,28 +49,28 @@ C'est une vielle idée. Un mathématicien Hollandais, Nicolaas Govert de Bruijn,
 
 Voici la séquence dans l'ordre. Elle se lit de gauche à droite, de haut en bas. 1111121111311...... Le 1111 de la fin de la séquence est en fait les premiers chiffres qui se répêtent.
 
-    
-    11111 21111 31112 21112 31113 21113 31121 21121 31122 21122
+```
+11111 21111 31112 21112 31113 21113 31121 21121 31122 21122
+```
 
 
-
-    
-    31123 21123 31131 21131 31132 21132 31133 21133 31212 21212
-
-
-
-    
-    31213 21213 31221 31222 21222 31223 21223 31231 31232 21232
+```
+31123 21123 31131 21131 31132 21132 31133 21133 31212 21212
+```
 
 
+```
+31213 21213 31221 31222 21222 31223 21223 31231 31232 21232
+```
 
-    
-    31233 21233 31313 21313 31322 21322 31323 21323 31332 21332
+
+```
+31233 21233 31313 21313 31322 21322 31323 21323 31332 21332
+```
 
 
-
-    
-    31333 21333 32222 23222 33223 23223 33232 33233 33311 11
-
+```
+31333 21333 32222 23222 33223 23223 33232 33233 33311 11
+```
 
 La protection contre cette attaque est heureusement toute simple : à l'étape 2, effacer tous les chiffres et en redemander n autres. C'est ce qu'on fait les designers de Bixi. L'histoire ne dit pas s'ils connaissaient l'attaque, ou s'ils ont été chanceux... Au moins il pourrons dire qu'il m'ont fais marcher et pédaler !

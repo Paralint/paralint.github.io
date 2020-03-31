@@ -12,9 +12,11 @@ categories:
 ---
 
 I fixed a bug in notifu that made it ignore quotes that were escaped with a backslash. For example, this command line works now :
-    
-    notifu /m "\"Theo Est\" <a href="mailto:test@example.com">test@example.com</a>"
 
+
+```
+notifu /m "\"Theo Est\" [test@example.com](mailto:test@example.com)"
+```
 
 
 

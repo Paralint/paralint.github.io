@@ -29,9 +29,9 @@ To edit the registry of a remote machine running under a debugger :
 	
   3. Fix the registry with the command line reg.exe tool. For example, to restore authentication packages type
 
-    
-    reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v "Authentication packages" /t REG_MULTI_SZ /d msv1_0
-
+```
+reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v "Authentication packages" /t REG_MULTI_SZ /d msv1_0
+```
 
 
 

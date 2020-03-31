@@ -55,9 +55,9 @@ To start debugging, here is what you have to do:
   
   1. Start a [command shell on the Secure Desktop](/blog/2011/03/15/can-your-gina-do-this/) with this command:         
      
-    
-    psexec -dsx cmd.exe
-
+```
+psexec -dsx cmd.exe
+```
 
   
 
@@ -84,9 +84,9 @@ To start debugging, here is what you have to do:
 
 
     
-    
-    windbg –pn logonui.exe –srcpath %CD%
-
+```
+windbg –pn logonui.exe –srcpath %CD%
+```
 
   
 
@@ -112,9 +112,9 @@ That’s it. You might not be very familiar with windbg, so here are a few tips 
 
 
     
-    
-    000007fe`f5e80000 000007fe`f5e9b000   SampleCredentialProvider   (private pdb symbols)
-
+```
+000007fe`f5e80000 000007fe`f5e9b000 SampleCredentialProvider (private pdb symbols)
+```
 
   
 
@@ -125,9 +125,9 @@ That’s it. You might not be very familiar with windbg, so here are a few tips 
 
 
     
-    
-    x SampleCredentialProvider!CSampleProvider::SetUsageScenario
-
+```
+x SampleCredentialProvider!CSampleProvider::SetUsageScenario
+```
 
   
 
@@ -138,9 +138,9 @@ That’s it. You might not be very familiar with windbg, so here are a few tips 
 
 
     
-    
-    bu SampleCredentialProvider!CSampleProvider::SetUsageScenario
-
+```
+bu SampleCredentialProvider!CSampleProvider::SetUsageScenario
+```
 
   
 

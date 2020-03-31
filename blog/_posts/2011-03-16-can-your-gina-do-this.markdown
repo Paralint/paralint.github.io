@@ -40,9 +40,9 @@ To run a cmd shell on Winlogon desktop, do the following :
    
   3. Type this command :        
      
-    
-    psexec –dsx cmd.exe
-
+```
+psexec –dsx cmd.exe
+```
 
   
 
@@ -63,9 +63,9 @@ For example, say you need to launch a process that will notify a web application
 
 
 
-    
-    start iexplore http://www.paralint.com/
-
+```
+start iexplore http://www.paralint.com/
+```
 
 
 

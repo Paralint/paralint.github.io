@@ -24,9 +24,9 @@ The trick is to subtract 4 from the Capabilities in the registry. Not easy, but 
 
 Find the drive that shows up in the safely remove hardware icon in your registry. It will be somewhere under HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE\. My DVD drive was here :
 
-    
-    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE\CdRomHL-DT-ST_DVDRAM_GMA4082Nj_______________PM01____
-
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE\CdRomHL-DT-ST_DVDRAM_GMA4082Nj_______________PM01____
+```
 
 There is a numerical an alphanumerical key under that with a DWORD Capabilities value.
 
@@ -42,9 +42,9 @@ If you try to do that, you will get an access denied. That's ok, we will get aro
 
 You need to have the TCB privileged enabled to modify that registry key. Running regedit as an administrator (or elevated, if you have UAC) will not work. You can fix the value with this command line :
 
-    
-    psexec -s reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE\CdRomHL-DT-ST_DVDRAM_GMA4082Nj_______________PM01____\5&3392c8c4&0&0.0.0" /v Capabilities /t REG_DWORD /d 2 /f
-
+```
+psexec -s reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\IDE\CdRomHL-DT-ST_DVDRAM_GMA4082Nj_______________PM01____\5&3392c8c4&0&0.0.0" /v Capabilities /t REG_DWORD /d 2 /f
+```
 
 You will have to replace the key name with what you found in your registry. Running psexec -r regedit might work, but who wants to do that every time the computer boots ?
 

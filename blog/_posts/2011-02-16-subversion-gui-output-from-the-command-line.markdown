@@ -23,10 +23,10 @@ Tortoise SVN is a Explorer shell extension which calls a Windows executable, Tor
 To use it from the command line, simply save this batch file somewhere in your path :
 
    
-    
-    @echo off 
-    start "" "C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe"  /command:%1 /path:"%2"
-
+```
+@echo off 
+start "" "C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" /command:%1 /path:"%2"
+```
 
 
 
@@ -40,9 +40,9 @@ Then simply call like this :
 
 
 
-    
-    tortoise log http://src.pararlint.com/aucun/trunk
-
+```
+tortoise log http://src.pararlint.com/aucun/trunk
+```
 
 
 
@@ -56,9 +56,9 @@ or like this
 
 
 
-    
-    tortoise commit .
-
+```
+tortoise commit .
+```
 
 
 

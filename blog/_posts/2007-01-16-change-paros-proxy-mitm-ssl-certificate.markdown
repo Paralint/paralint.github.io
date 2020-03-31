@@ -19,15 +19,15 @@ But I have an assignment where the client configuration cannot be changed. The c
 
 <!-- more -->First of all, Paros certificate is the file ./resource/paroskey. It is a JKS keystore and it's password is "!@#$%^&*()", without the quotes (the password is in the source code, I am not [revealing any secrets](http://www.google.com/codesearch?q=+%22!%40%23%24%25%5E%26*()%22+show:1nVTaHJQG2I:3qN8LO4APgY:RwTWy1IW3Kc&sa=N&cd=5&ct=rc&cs_p=http://gentoo.osuosl.org/distfiles/paros-3.2.9-src.zip&cs_f=paros/src/org/parosproxy/paros/network/SSLConnector.java#a0)). Extract it with this command :
 
-    
-    jar xvf paros.jar resource/paroskey
-
+```
+jar xvf paros.jar resource/paroskey
+```
 
 You can view the certificate using this command (you might have to escape some characters for it to work on your platform) :
 
-    
-    keytool -list -v -keystore resource/paroskey -storepass "!@#$%^&*()"
-
+```
+keytool -list -v -keystore resource/paroskey -storepass "!@#$%^&*()"
+```
 
 
 
@@ -40,20 +40,20 @@ Now, you have to get your hand on a certificate. I suggest using your own certif
 
 So if you have your CA public key in a file named ca-cert.pem, copy it to the local directory and import it in your brand new keystore with this command :
 
-    
-    keytool -import -trustcacerts -alias "my-ca" -file ca-cert.pem -keystore resource/paroskey -noprompt -storepass "!@#$%^&*()"
-
+```
+keytool -import -trustcacerts -alias "my-ca" -file ca-cert.pem -keystore resource/paroskey -noprompt -storepass "!@#$%^&*()"
+```
 
 Now you must choose the hostname of your proxy. It doesn't have to match any DNS record, but if you want your setup to be warning-free, make them match. I choose mitm.paralint.com, and I delete the old certificate and generate a new private key with those two commands :
 
-    
-    keytool -delete -alias paros -keystore resource/paroskey -storepass "!@#$%^&*()"
+```
+keytool -delete -alias paros -keystore resource/paroskey -storepass "!@#$%^&*()"
+```
 
 
-
-    
-    keytool -genkey -keyalg RSA -alias paros -keystore resource/paroskey -storepass "!@#$%^&*()" -keypass "!@#$%^&*()" -dname "CN=mitm.paralint.com" -validity 720
-
+```
+keytool -genkey -keyalg RSA -alias paros -keystore resource/paroskey -storepass "!@#$%^&*()" -keypass "!@#$%^&*()" -dname "CN=mitm.paralint.com" -validity 720
+```
 
 
 
@@ -61,9 +61,9 @@ Adjust the validity period to your needs, but do not change the alias or passwor
 
 
 
-    
-    keytool -certreq -v -alias paros -keystore resource/paroskey -storepass "!@#$%^&*()" -file mitm.paralint.com.csr
-
+```
+keytool -certreq -v -alias paros -keystore resource/paroskey -storepass "!@#$%^&*()" -file mitm.paralint.com.csr
+```
 
 
 
@@ -76,9 +76,9 @@ Your CA will send you back a signed certificate (mitm.paralint.com.cert). It mus
 
 
 
-    
-    openssl x509 -in mitm.paralint.com.cert -out mitm.paralint.com.der -outform DER
-
+```
+openssl x509 -in mitm.paralint.com.cert -out mitm.paralint.com.der -outform DER
+```
 
 
 
@@ -86,9 +86,9 @@ Now import that DER encoded certificate in a JKS keystore with this keytool comm
 
 
 
-    
-    keytool -import -v -alias paros -file mitm.paralint.com.der -keystore resource/paroskey -storepass "!@#$%^&*()" -storetype JKS
-
+```
+keytool -import -v -alias paros -file mitm.paralint.com.der -keystore resource/paroskey -storepass "!@#$%^&*()" -storetype JKS
+```
 
 
 
@@ -101,9 +101,9 @@ Replace the old keystore with the new one in paros.jar with this command (backup
 
 
 
-    
-    jar uvf paros.jar resource\paroskey
-
+```
+jar uvf paros.jar resource\paroskey
+```
 
 
 

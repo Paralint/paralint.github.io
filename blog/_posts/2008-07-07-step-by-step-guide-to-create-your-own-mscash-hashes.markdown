@@ -26,10 +26,10 @@ I found a detailed [explanation of the MSCASH format](http://www.securiteam.com/
 The format is MD4(MD4(password) + username). password and username are in Unicode. In the explanation linked above, we have the classical "user" and "password" combination. Using notepad, type your password. Save the file using Unicode format. The first two bytes of the file will be FF and EF, a flag called the byte order mark (BOM). Delete them using [an hexadecimal editor](http://www.mh-nexus.de/hxd/). It should look like this :
 
  
-    
-    Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
-    00000000  70 00 61 00 73 00 73 00 77 00 6F 00 72 00 64 00  p.a.s.s.w.o.r.d.
-
+```
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+00000000  70 00 61 00 73 00 73 00 77 00 6F 00 72 00 64 00  p.a.s.s.w.o.r.d.
+```
 
 
 
@@ -43,9 +43,9 @@ Now calculate the first hash with openssl, with a binary output :
 
 
 
-    
-    openssl dgst -md4 -binary password.unicode.txt > md4.password
-
+```
+openssl dgst -md4 -binary password.unicode.txt > md4.password
+```
 
 
 
@@ -63,9 +63,9 @@ Type and save your user name in Unicode format, remove the BOM, and concatenate 
 
 
 
-    
-    copy /b md4.password + user.unicode.txt md4.password.user
-
+```
+copy /b md4.password + user.unicode.txt md4.password.user
+```
 
 
 
@@ -79,11 +79,11 @@ The file should look like this (the first 16 bytes is the md4 hash of the passwo
 
 
 
-    
-    Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
-    00000000  88 46 F7 EA EE 8F B1 17 AD 06 BD D8 30 B7 58 6C  ˆF÷ei.±...½Ø0*Xl
-    00000010  75 00 73 00 65 00 72 00                          u.s.e.r.
-
+```
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+00000000  88 46 F7 EA EE 8F B1 17 AD 06 BD D8 30 B7 58 6C  ˆF÷ei.±...½Ø0*Xl
+00000010  75 00 73 00 65 00 72 00                          u.s.e.r.
+```
 
 
 
@@ -97,10 +97,10 @@ Now just hash that last file, again with openssl :
 
 
 
-    
-    openssl dgst -md4 md4.password.user
-    MD4(md4.password.user)= 2d9f0b052932ad18b87f315641921cda
-
+```
+openssl dgst -md4 md4.password.user
+MD4(md4.password.user)= 2d9f0b052932ad18b87f315641921cda
+```
 
 
 

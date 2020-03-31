@@ -48,33 +48,33 @@ In the sample output (below) you will see
 
 
 
-    
-    $ localfiles.bat C:\Users\Guillaume\src\Projects\aucun.selfserve
-    
-    Gathering data...
-    
-    ======================================
-     New sourcefiles
-    ======================================
-    (none found)
-    
-    ======================================
-     Modified sourcefiles
-    ======================================
-    M       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\SecurityHelper.cpp
-    M       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\loggedout_dlg.cpp
-    M       C:\Users\Guillaume\src\Projects\aucun.selfserve\common\Trace.c
-    M       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\GinaHook.c
-    
-    ======================================
-     Unversioned files
-    ======================================
-    ?       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\StaticPrompt.cpp
-    ?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\shellie_p.c
-    ?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\dlldata.c
-    ?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\shellie_i.c
-    ?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\shellie.h
+```
+$ localfiles.bat C:\Users\Guillaume\src\Projects\aucun.selfserve
 
+Gathering data...
+
+======================================
+ New sourcefiles
+======================================
+(none found)
+
+======================================
+ Modified sourcefiles
+======================================
+M       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\SecurityHelper.cpp
+M       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\loggedout_dlg.cpp
+M       C:\Users\Guillaume\src\Projects\aucun.selfserve\common\Trace.c
+M       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\GinaHook.c
+
+======================================
+ Unversioned files
+======================================
+?       C:\Users\Guillaume\src\Projects\aucun.selfserve\GINA\StaticPrompt.cpp
+?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\shellie_p.c
+?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\dlldata.c
+?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\shellie_i.c
+?       C:\Users\Guillaume\src\Projects\aucun.selfserve\shellie\shellie.h
+```
 
 [Here is the file](/blog/wp-content/uploads/2011/12/localfiles.txt). I gave it a txt extension, in case you are behing a paranoïac corporate proxy.
 

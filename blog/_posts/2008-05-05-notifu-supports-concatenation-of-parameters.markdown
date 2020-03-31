@@ -15,9 +15,9 @@ This [Notifu update](http://www.paralint.com/projects/notifu/download.html#Downl
 
 For example, this command line now works :
 
-    
-    notifu /p Concatenate /p " this" /m "Hello" /m ", " /m "World"
-
+```
+notifu /p Concatenate /p " this" /m "Hello" /m ", " /m "World"
+```
 
 Nothing is added to your parameters. If you want a space, you must add it.
 

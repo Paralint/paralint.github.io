@@ -28,9 +28,9 @@ Microsoft replaced GINA DLLs with credentials providers (ICredentialProvider), s
 
 Turns out it is pretty easy. You can [get the source code and a compiled binary here](/projects/aucun/). I recommend that you don't trust me with your password and work with the source. Anonymous Subversion access with this command
 
-    
-    svn co <a href="http://src.paralint.com/aucun/trunk">http://src.paralint.com/aucun/trunk</a> aucun
-
+```
+svn co [http://src.paralint.com/aucun/trunk](http://src.paralint.com/aucun/trunk) aucun
+```
 
 <!-- more -->
 
@@ -75,9 +75,9 @@ That's about it. The third bullet of item 6 is actually what will happen most of
 
 I insists there is no need for the users to be members of the administrators group for this to work. With my implementation, you merely set a registry key with the name of the group you want to use. Add any user(s) or group(s) to this group.
 
-    
-    HKEY_LOCAL_MACHINE\SOFTWARE\Paralint.com\Aucun"GroupName"="paralint.com\DG_SESSION_UNLOCKERS"
-
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Paralint.com\Aucun"GroupName"="paralint.com\DG_SESSION_UNLOCKERS"
+```
 
 I might add a blacklist feature, so that members of the the administrative group can never be unlocked. It is not hard to do. If I see interest in this project, I write it happen.
 
