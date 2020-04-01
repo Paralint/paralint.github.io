@@ -5,4 +5,7 @@
 layout: home
 ---
 # Welcome to the Parallel Interface
-I am building this web site from the bottom up. This page only has links to a few pages for now.
+
+ * [Notifu](/projects/notifu), a yellow pop-up balloon utility
+ * [Aucun](/projects/aucun), a replacement GINA DLL with more flexible unlock policy
+ * [My blog](/blog/) , subscribe via [RSS](/feed.xml)

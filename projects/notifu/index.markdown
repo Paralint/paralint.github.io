@@ -3,15 +3,12 @@ layout: page
 title: Notifu, a free open source pop-up balloon utility
 ---
 
-Notifu, a free open source pop-up balloon utility
-=================================================
-
 Notifu is a tool that displays a yellow pop-up balloon in the system notification area, better known as the tray. It is free and open source, give it a try!
 
 -   [Features](#features)
 -   [Download](#download)
--   [Command line arguments](#command-line-arguments)
--   [Example usage](#example-usage)
+-   [Basic usage](#basic-usage)
+-   [Examples](#examples)
 -   [Special switches](#special-switches)
 -   [Debugging](#debugging)
 -   [Open Source](#open-source)
@@ -25,8 +22,7 @@ Notifu uses the same API that Windows uses to show pop-up ballons. You see them 
 I created this utility to put in my scripts, as it allows to show status messages using a less intrusive (non-blocking) way. It also allows for some user interaction if the user clics on the balloon.
 
 Features
---------
-
+==========
 Notifu can do most of the tricks Windows allows, like :
 
 -   Show your prompt and message
@@ -37,16 +33,16 @@ Notifu can do most of the tricks Windows allows, like :
 
 
 Download
---------
+==========
 
 Click here to [download a compiled version](http://www.paralint.com/projects/notifu/dl/notifu-1.7.0.zip).
 
 Click here to [download zipped sources](http://www.paralint.com/projects/notifu/dl/notifu-src-1.7.0.zip).
 
-Command line arguments
-----------------------
+Basic usage
+-----------
 
-Notifu displays a message. So in it's simplest form, the message is the only required arguments. Use the /m switch
+Notifu displays a message. So in it's simplest form, the message is the only required arguments. Use the `/m` switch
 
 ```
 notifu /m "This is a simple Notifu message."
@@ -56,52 +52,55 @@ You will notice that by default, Notifu uses the icon of its parent process. We 
 
 You can combine any other command line switch along with /m. But for clarity, they are prensented separatly here. Go to "example usage" section below to see Notifu in action.
 
-| Switch | Description |
-| /p |
+Prompt
+======
 
-Most users will want their own prompt (or title, the line first, bold line of the pop-up). Use the /p switch
+
+| Switch | Description |
+| `/p` |  Most users will want their own prompt (or title, the line first, bold line of the pop-up). Use the `/p` switch |
 
 ```
 notifu /m "This is a simple Notifu message." /p "Simple prompt"
 ```
 
- |
-| /d |
+Delay
+=====
 
-You probably don't want it to stay up there forever. Use the /d switch (the delay is in milliseconds, with a 250ms resolution).
+| Switch | Description |
+| `/d` | You probably don't want it to stay up there forever. Use the `/d` switch (the delay is in milliseconds, with a 250ms resolution). |
 
 ```
 notifu /m "This is a simple Notifu message." /d 3000
 ```
 
-Just remember that you are not alone deciding how long your message stays up. There are some cases where Windows will dismiss the pop-up before the timeout expires.
+Just remember that you are not alone deciding how long your message stays up. Modern Windows version will dismiss the pop-up before the timeout expires.
 
-Windows will wait for the user to notice it. It knows a user is there when the mouse moves (or any activity that would prevent a screen saver, like hitting the "shift" key). So you should look a /d as an upper limit on how long you want the balloon to stay up. Windows can shorten that. I see a 10 seconds limit on both Windows XP SP2 and Vista Business SP1. I heard of a user who had 3 second delay.
+Windows will wait for the user to notice it. It knows a user is there when the mouse moves (or any activity that would prevent a screen saver, like hitting the "shift" key). So you should look a `/d` as an upper limit on how long you want the balloon to stay up. Windows can shorten that. I see a 10 seconds limit on both Windows XP SP2 and Vista Business SP1. I heard of a user who had 3 second delay.
 
 If you find a way to control that, please let me know !
 
- |
-| /t (info|warn|error) |
+Type
+====
 
-If your message is important, you can change the icon Windows will use *inside*the balloon with the /t switch, followed by info, warn or error.
+| Switch | Description |
+| `/t (info|warn|error)` | If your message is important, you can change the icon Windows will use *inside*the balloon with the /t switch, followed by info, warn or error.|
 
 ```
 notifu /m "This is a simple Notifu message." /t warn
 ```
 
- |
-| /i [path to icon] |
+Icon
+====
 
-If you script launches from a cmd.exe process or some batch program, you might want to use a different icon in the system notification area. The /i switch tries it's best to extract an icon from the path you give it. It supports using environment variables and an icon number.
+| Switch | Description |
+| `/i [path to icon]` | If you script launches from a cmd.exe process or some batch program, you might want to use a different icon in the system notification area. The `/i` switch tries it's best to extract an icon from the path you give it. It supports using environment variables and an icon number. |
 
 ```
 notifu /m "This is a simple Notifu message." /i %SYSTEMROOT%\system32\shell32.dll,43
 ```
 
- |
-
-Example usage
--------------
+Examples
+--------
 
 Notifu handles many instances of itself. When an instance sees a new instance comming up, it dismisses itself to make way for the new one. This behavior allows you to put notifu messages in your scripts and not have to worry about confusing the user. It uses terminal services aware semaphores to achieve this.
 
@@ -114,7 +113,7 @@ rem ----------------------------------------------------------------
 rem Notify the user that we are doing something that will take a while 
 rem (This next line should be on a single line in a batch file)
 start "" notifu /p "Please wait..." /m "Checking disk integrity. It might take a while." /t warn /i %SYSTEMROOT%\system32\shell32.dll,79
-rem Do what we have to do... 
+rem This next line is the actual long running task
 chkdsk c: /I /C 
 rem Here we use the start command so we don't have to wait for Notifu to exit
 start "" notifu /p "Finished!" /m "Done checking the drive for errors."
@@ -192,11 +191,11 @@ Here is what you do :
 2.  From the Options menu, uncheck "Force carriage return"
 3.  Add the following line to the registry
 
-```
+    ```
     [HKEY_CURRENT_USER\SOFTWARE\Paralint.com\Notifu\Debug]
     "Level"="Error"
     "Output"="OutputDebugString"
-```
+    ```
 
 4.  Reproduce the problem, bundle the trace with a description of the problem and [send me an email.](mailto:guillaume@paralint.com)
 
