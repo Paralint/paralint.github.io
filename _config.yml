@@ -30,6 +30,8 @@ permalink: /:year/:month/:title
 
 timezone: Etc/UTC
 
+show_excerpts: true
+
 # Build settings
 theme: minima
 plugins:
