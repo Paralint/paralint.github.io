@@ -1,7 +1,7 @@
 Any user can unlock now with this custom GINA
 =============================================
 
-Aucun is a replacement GINA that wraps Microsoft's own MSGINA.DLL to allow any given group of users to unlock or force logoff a locked session on a Windows machine, unless the currently loggon on user is a member of a group you specify. Feel free to give it a try! 
+Aucun is a replacement GINA that wraps Microsoft's own MSGINA.DLL to allow any given group of users to unlock or force logoff a locked session on a Windows machine, unless the currently loggon on user is a member of a group you specify. Feel free to give it a try!
 
 -   [Features](https://www.paralint.com/projects/aucun/index.html#Features)
 -   [Download](https://www.paralint.com/projects/aucun/index.html#Download)
@@ -34,24 +34,24 @@ I created this for a friend that needed an unlock feature. By popular demand, I 
 -   Supports international versions of Windows
 -   Allows chaining multiple Gina's together
 
-If you need a feature that Aucun doesn't provide, [send me an email.](mailto:guillaume@paralint.com)
+If you need a feature that Aucun doesn't provide, [send me an email.](mailto:guillaume@paralint.com)
 
 Windows XP SP2 and Windows Server 2003 supported only (32 or 64 bits)
 
-Microsoft decided to remove support for custom GINA in Windows Vista. This GINA works on Windows XP SP2 and Windows Server 2003, but it will never work on Vista or Server 2008, by desing. I am working on a [Credential provider port](https://www.paralint.com/blog/2009/02/24/porting-a-custom-gina-to-a-credential-provider).
+Microsoft decided to remove support for custom GINA in Windows Vista. This GINA works on Windows XP SP2 and Windows Server 2003, but it will never work on Vista or Server 2008, by desing. I am working on a [Credential provider port](https://www.paralint.com/blog/2009/02/24/porting-a-custom-gina-to-a-credential-provider).
 
 Download
 --------
 
 There are three ways to get the DLL. Help yourself to :
 
--   A [compiled binary](https://www.paralint.com/projects/aucun/dl/aucun-1.4.8.zip) (Aucun.dll and aucun64.dll)
--   The [source code snapshot](https://www.paralint.com/projects/aucun/dl/aucun-src-1.4.8.zip) in a zipped file
+-   A [compiled binary](https://www.paralint.com/projects/aucun/dl/aucun-1.4.8.zip) (Aucun.dll and aucun64.dll)
+-   The [source code snapshot](https://www.paralint.com/projects/aucun/dl/aucun-src-1.4.8.zip) in a zipped file
 -   Source code from the Subversion repository
 
     svn checkout http://src.paralint.com/aucun/trunk/ aucun
 
--   Browse the [source code online](http://src.paralint.com/listing.php?repname=Aucun&path=%2Ftrunk%2F#path_trunk_)
+-   Browse the [source code online](http://src.paralint.com/listing.php?repname=Aucun&path=%2Ftrunk%2F#path_trunk_)
 
 Installation
 ------------
@@ -90,7 +90,7 @@ There are 5 registry key you can set. Under HKEY_LOCAL_MACHINE\SOFTWARE\Paralint
 | --- | --- |
 | Unlock | Members of this group will be able to unlock a workstation locked by anyone, unless the user who locked the session is a member of the "excluded" group. |
 | Force logoff | Members of this group will be able to force logoff any other user, even if they are not administrators, unless the user who locked the session is a member of the "excluded" group. |
-| Excluded | Members of this group will get standard MSGINA behavior. The replacement GINA *will not hook* the original GINA dialogs at all for members of this group. |
+| Excluded | Members of this group will get standard MSGINA behavior. The replacement GINA *will not hook* the original GINA dialogs at all for members of this group. |
 
 ### Display a notice
 
@@ -181,7 +181,7 @@ Successful Logon:
 
 Logon type "7" is LOGON32_LOGON_UNLOCK, and caller logon id 0x3E7 is the SYSTEM logon session (999). You see that the logon proces name is Paralint.
 
-A GINA has complete control over your machine. It runs in the TCB and it sees passwords all day. There is no backdoor in this code, but I fully understand that you don't take my word for it. Spending the time to analyse the code for a backdoor is not an insult, it is actually an honour. If you want to work from the source and are having trouble setting it up, [send me an email.](mailto:guillaume@paralint.com) I will try to help you.
+A GINA has complete control over your machine. It runs in the TCB and it sees passwords all day. There is no backdoor in this code, but I fully understand that you don't take my word for it. Spending the time to analyse the code for a backdoor is not an insult, it is actually an honour. If you want to work from the source and are having trouble setting it up, [send me an email.](mailto:guillaume@paralint.com) I will try to help you.
 
 Gina chaining
 -------------
@@ -208,7 +208,7 @@ If for some reason the Gina does not work for you, drop me a line. I will help y
 
 It will help to send me an output trace. To generate it, here is what you do :
 
-1.  Download, unzip and run Microsoft's [DebugView](https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx) (of SysInternal fame)
+1.  Download, unzip and run Microsoft's [DebugView](https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx) (of SysInternal fame)
 2.  From the Options menu, uncheck "Force carriage return"
 3.  Add the following line to the registry
 
@@ -218,4 +218,4 @@ It will help to send me an output trace. To generate it, here is what you do :
     "Output"="OutputDebugString"
     "Level"="Info"
 
-4.  Bundle the trace and description of your problem and [send me an email.](mailto:guillaume@paralint.com)
+4.  Bundle the trace and description of your problem and [send me an email.](mailto:guillaume@paralint.com)
