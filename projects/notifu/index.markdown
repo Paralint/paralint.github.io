@@ -15,9 +15,9 @@ Notifu is a tool that displays a yellow pop-up balloon in the system notificatio
 
 Notifu uses the same API that Windows uses to show pop-up ballons. You see them when you add a device, such as a wireless network or a USB drive, or when certain system events occur, say, every second tuesday of the month...
 
-[![On Windows XP](screen_shot_01.png)](http://www.paralint.com/projects/notifu/download.html)
+[![On Windows XP](screen_shot_01.png)](/projects/notifu/download.html)
 
-[![On Windows 7](screen_shot_02.png)](http://www.paralint.com/projects/notifu/download.html)
+[![On Windows 7](screen_shot_02.png)](/projects/notifu/download.html)
 
 I created this utility to put in my scripts, as it allows to show status messages using a less intrusive (non-blocking) way. It also allows for some user interaction if the user clics on the balloon.
 
@@ -35,9 +35,8 @@ Notifu can do most of the tricks Windows allows, like :
 Download
 ==========
 
-Click here to [download a compiled version](http://www.paralint.com/projects/notifu/dl/notifu-1.7.0.zip).
+Click here to [download the latest compiled version](https://github.com/ixe013/notifu/releases/latest).
 
-Click here to [download zipped sources](http://www.paralint.com/projects/notifu/dl/notifu-src-1.7.0.zip).
 
 Basic usage
 -----------
@@ -139,7 +138,7 @@ Those result codes can be usefull to give the user more information on a specifi
 @echo off 
 rem (Do something usefull here) 
 notifu /m "Click the balloon to know more about what is going on." /d 5000 if NOT ERRORLEVEL 3 goto:eof
-start iexplore "http://www.paralint.com/notifu/" 
+start "" "http://www.paralint.com/projects/notifu/" 
 ```
 
 
@@ -187,7 +186,7 @@ I don't control much of what is going on. I really just call Windows IUserNotifi
 
 Here is what you do :
 
-1.  Download, unzip and run Microsoft's [DebugView](https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx)(of SysInternal fame)
+1.  Download, unzip and run Microsoft's [DebugView](https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx) (of SysInternal fame)
 2.  From the Options menu, uncheck "Force carriage return"
 3.  Add the following line to the registry
 
@@ -205,17 +204,9 @@ If you don't see anything, make sure you are running version 1.7.0 or later. To 
 Open Source
 --------
 
-The source code for this project is hosted in Parallel Interface Subversion server. It is written in C++ and built with Visual C++.
+The source code for this project is hosted on Github. It is written in C++ and built with Visual C++.
 
-You can [read about the implementation](http://www.paralint.com/projects/notifu/code.html), or find out for yourself by any of those means:
+You can [read about the implementation](/projects/notifu/code.html), or find out for yourself by any of those means:
 
--   Download [zipped binary (ready to run)](http://www.paralint.com/projects/notifu/dl/notifu-1.7.0.zip)
--   Download [zipped sources](http://www.paralint.com/projects/notifu/dl/notifu-src-1.7.0.zip)
--   [Browse the source code](http://src.paralint.com/listing.php?repname=Notifu&path=/trunk/#path_trunk_)
--   Use your subversion client:
-    `svn checkout http://src.paralint.com/notifu/trunk/ notifu`
-
-
-
-
-
+-   Download [zipped binary (ready to run) or source code](https://github.com/ixe013/notifu/releases/latest)
+-   [Browse and clone the source code](https://github.com/ixe013/notifu)
